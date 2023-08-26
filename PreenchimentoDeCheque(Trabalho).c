@@ -2,15 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <math.h>
+#include <conio.h>
+
+#define enter 13
 
 bool verificarSenha(const char *senha) {
-    // Aqui você pode definir a senha secreta
+    // Aqui vocÃƒÂª pode definir a senha secreta
     const char *senhaSecreta = "senha123";
     return strcmp(senha, senhaSecreta) == 0;
 }
 
 void numeroPorExtenso(int num) {
-    const char *unidades[] = {"", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove"};
+    const char *unidades[] = {"", "um", "dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove"};
     const char *dezAVinte[] = {"", "onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove"};
     const char *dezenas[] = {"", "dez", "vinte", "trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa"};
     const char *centenas[] = {"", "cento", "duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos"};
@@ -47,7 +51,7 @@ void numeroPorExtenso(int num) {
 }
 
 void mesPorExtenso(int mes) {
-    const char *nomesMeses[] = {"", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
+    const char *nomesMeses[] = {"", "Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
     
     if (mes >= 1 && mes <= 12) {
         printf("%s", nomesMeses[mes]);
@@ -55,7 +59,7 @@ void mesPorExtenso(int mes) {
 }
 
 void centavosPorExtenso(int centavos) {
-    const char *unidadesCentavos[] = {"", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove"};
+    const char *unidadesCentavos[] = {"", "um", "dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove"};
     const char *dezenasCentavos[] = {"", "", "vinte", "trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa"};
     
     if (centavos >= 1 && centavos <= 9) {
@@ -73,30 +77,55 @@ void centavosPorExtenso(int centavos) {
 }
 
 void diaPorExtenso(int dia) {
-    const char *numerosPorExtenso[] = {"", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte", "vinte e um", "vinte e dois", "vinte e três", "vinte e quatro", "vinte e cinco", "vinte e seis", "vinte e sete", "vinte e oito", "vinte e nove", "trinta", "trinta e um"};
+    const char *numerosPorExtenso[] = {"", "um", "dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte", "vinte e um", "vinte e dois", "vinte e tres", "vinte e quatro", "vinte e cinco", "vinte e seis", "vinte e sete", "vinte e oito", "vinte e nove", "trinta", "trinta e um"};
 
     if (dia >= 1 && dia <= 31) {
         printf("dia %s", numerosPorExtenso[dia]);
     }
 }
 
+void esperatecla (int tecla){
+	char ch;
+	do{
+		ch = getch();
+	} while (ch != tecla);
+}
+
 int main() {
+    int ch;
 	char senha[20];
     double valorCheque;
-    int dia, mes, ano;
+    int dia, mes, ano, testeSenha=5;
+    ch = getch();
     
+    while(testeSenha>0){
     // Solicita a senha
-    printf("Digite a senha: ");
+    printf("|\n|  Digite a senha: ");
     scanf("%s", senha);
     
     // Verifica a senha
     if (!verificarSenha(senha)) {
-        printf("Senha incorreta. Encerrando o programa.\n");
-        return 1;
+        printf("|\n|  Senha incorreta. Tente novamente.\n");
+        testeSenha--;
+        printf("|\n|  Tentativas restantes: %d\n", testeSenha);
+        printf("|\n|  Pressione <ENTER> para continuar.");
+        esperatecla (enter);
+    }
+    else{
+        break;
+    }
+    system("cls");
+    }
+    system("cls");
+    if(testeSenha==0){
+        printf("|\n|  Muitas tentativas, tente novamente mais tarde.\n");
+        printf("|\n|  Pressione <ENTER> para sair.");
+        esperatecla (enter);
+        return 0;
     }
     
     // Solicita o valor do cheque
-    printf("Digite o valor do cheque: R$ ");
+    printf("|\n|  Digite o valor do cheque: R$ ");
     scanf("%lf", &valorCheque);
     
     // Extrai a parte inteira (reais) e a parte decimal (centavos)
@@ -104,24 +133,27 @@ int main() {
     int centavos = (int)round((valorCheque - reais) * 100);
     
     // Solicita e armazena a data de preenchimento
-    printf("Digite a data de preenchimento (DD/MM/AAAA): ");
+    printf("|\n|  Digite a data de preenchimento (DD/MM/AAAA): ");
     scanf("%d/%d/%d", &dia, &mes, &ano);
     
     // Imprime o valor por extenso e centavos
-    printf("Valor por extenso: ");
+    printf("|\n|  Valor por extenso: ");
     numeroPorExtenso(reais);
     printf(" reais e ");
     centavosPorExtenso(centavos);
-    printf("\n");
+    printf("    |\n");
     
     // Imprime a data por extenso
-    printf("Data de preenchimento: %d/%d/%d : ", dia, mes, ano);
+    printf("|\n|  Data de preenchimento: %d/%d/%d : ", dia, mes, ano);
     diaPorExtenso(dia);
     printf(" de ");
     mesPorExtenso(mes);
     printf(" de ");
     numeroPorExtenso(ano);
-    printf("\n");
+    printf("    |\n|");
     
-    return 0;
+    printf("\n|  Pressione <ENTER> para sair.");
+    esperatecla (enter); 
+
+return 0;   
 }
