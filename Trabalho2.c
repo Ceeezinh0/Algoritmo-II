@@ -210,7 +210,8 @@ int main() {
             default:
                 printf("Opcao invalida!\n");
         }
-    } while (opcao != 6);
+    } 
+	while (opcao != 6);
 
     return 0;
 }
