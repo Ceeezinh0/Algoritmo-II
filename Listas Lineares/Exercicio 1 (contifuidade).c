@@ -3,7 +3,7 @@
 #include <string.h>
 
 //###########################################################################
-// Estrutura para representar um paciente
+// Estrutura para cadastro de paciente
 struct Paciente {
     char nome[50];
     char estado[10];  // regular, ruim, pessimo
