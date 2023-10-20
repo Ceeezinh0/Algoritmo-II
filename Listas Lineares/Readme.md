@@ -4,28 +4,28 @@ Neste repositório, você encontrará dois exercícios de programação para pra
 
 ## Exercício 1: Sistema de Pronto-Socorro
 
-### Descrição
+**Descrição:**
 
 Um pronto-socorro deseja informatizar o seu sistema de atendimento aos pacientes. As recepcionistas utilizarão um terminal para fazer a ficha de cada paciente que chega. Juntamente com os dados do paciente, a recepcionista preenche um campo informando o estado do paciente (regular, ruim, péssimo). Ao terminar de atender a um paciente, o médico consultará o sistema para chamar o próximo paciente e, naturalmente, o sistema deverá priorizar os pacientes que estiverem em pior estado de saúde.
 
 ## Exercício 2: Manipulação de Lista de Dados
 
-### Descrição
+**Descrição:**
 
 Escreva um programa que manipule uma lista por contiguidade com os seguintes campos: nome, RG, data de nascimento, profissão.
 
-a) Inserção de elemento na lista ordenada pelo campo RG;  
-b) Remoção de um elemento na lista;  
-c) Mostrar elementos da lista;  
-d) Contar número de elementos da lista;  
-e) Procurar um elemento na lista pelo campo RG;  
-f) Mostrar o nome e a profissão de todos acima de 30 anos;  
-g) Contar quantas profissões diferentes tem na lista;  
-h) Gerar lista ordenada pelo campo nome;  
-i) Gerar lista ordenada pelo campo RG;
+- Inserção de elemento na lista ordenada pelo campo RG;
+- Remoção de um elemento na lista;
+- Mostrar elementos da lista;
+- Contar o número de elementos na lista;
+- Procurar um elemento na lista pelo campo RG;
+- Mostrar o nome e a profissão de todos acima de 30 anos;
+- Contar quantas profissões diferentes existem na lista;
+- Gerar uma lista ordenada pelo campo nome;
+- Gerar uma lista ordenada pelo campo RG.
 
-Cada item deve ser feito utilizando o conceito de função e, escreva um programa que mostre um menu de opções e o usuário escolha qual função quer usar até escolher interromper o programa. Os dados estão armazenados em um arquivo texto, que deve ser atualizado ao término do programa.
+Cada item deve ser implementado usando o conceito de função. Escreva um programa que mostre um menu de opções, permitindo ao usuário escolher qual função usar. Os dados estão armazenados em um arquivo de texto, que deve ser atualizado ao término do programa.
 
 ---
 
-Espero que eu tenha te ajudado de alguma forma!!
+Gostaria que Comentassem, o que pode ser melhorado, ou algo do gênero para que eu possa ir melhorando os meus códigos
