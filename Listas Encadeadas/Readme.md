@@ -8,11 +8,11 @@ O arquivo `Vetor Dinamicamente alocado.c` mostra como alocar memória dinamicame
 
 ## Programa 2: Lista Encadeada
 
-O arquivo `programa2.c` implementa uma lista simplesmente encadeada em C. Ele define uma estrutura de nó para a lista e inclui funções para criar uma lista vazia, incluir elementos no início da lista e mostrar os elementos da lista. O programa permite ao usuário inserir valores inteiros na lista encadeada.
+O arquivo `Lista Encadeada.c` implementa uma lista simplesmente encadeada em C. Ele define uma estrutura de nó para a lista e inclui funções para criar uma lista vazia, incluir elementos no início da lista e mostrar os elementos da lista. O programa permite ao usuário inserir valores inteiros na lista encadeada.
 
 ## Programa 3: Lista Encadeada com typedef
 
-O arquivo `programa3.c` é uma variação do Programa 2, que inclui o uso de um `typedef`. Ele cria um sinônimo `no` para o tipo `struct reg *`, tornando o código um pouco mais legível, mas mantendo a mesma funcionalidade de uma lista encadeada.
+O arquivo `Lita Encadeada.c` é uma variação do Programa 2, que inclui o uso de um `typedef`. Ele cria um sinônimo `no` para o tipo `struct reg *`, tornando o código um pouco mais legível, mas mantendo a mesma funcionalidade de uma lista encadeada.
 
 Cada programa é acompanhado por um arquivo de código-fonte em C correspondente e pode ser compilado e executado em um ambiente C.
 
@@ -27,6 +27,4 @@ Os programas interagem com o usuário para realizar as operações correspondent
 
 ---
 
-Sinta-se à vontade para explorar e executar esses programas para entender melhor os conceitos demonstrados.
-
-*Nota*: Certifique-se de ter um compilador C (como o GCC) instalado em seu sistema para compilar e executar esses programas.
+Sinta-se à vontade para explorar e executar esses programas para entender melhor os conceitos Mostrados.
