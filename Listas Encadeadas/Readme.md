@@ -1,4 +1,4 @@
-# Programas em C
+# Programas sobre Listas Encadeadas
 
 Este repositório contém três programas em linguagem C que demonstram diferentes conceitos.
 
