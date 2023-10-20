@@ -4,7 +4,7 @@ Este repositório contém três programas em linguagem C que demonstram diferent
 
 ## Programa 1: Alocação Dinâmica
 
-O arquivo `programa1.c` mostra como alocar memória dinamicamente em C e preencher um vetor com valores fornecidos pelo usuário. O programa também imprime os valores do vetor e libera a memória alocada no final.
+O arquivo `Vetor Dinamicamente alocado.c` mostra como alocar memória dinamicamente em C e preencher um vetor com valores fornecidos pelo usuário. O programa também imprime os valores do vetor e libera a memória alocada no final.
 
 ## Programa 2: Lista Encadeada
 
