@@ -9,7 +9,7 @@ O arquivo `Vetor Dinamicamente alocado.c` mostra como alocar memória dinamicame
 ## Programa 2: Lista Encadeada Ordenada
 
 ### Descrição
-O arquivo `Lista_Encadeada_Ordenada.c` implementa uma lista encadeada ordenada em C. Ele define uma estrutura de nó para a lista e inclui funções para criar uma lista vazia, incluir elementos na lista de forma ordenada, mostrar os elementos da lista e contar os elementos da lista.
+O arquivo `Lista Encadeada Ordenada.c` implementa uma lista encadeada ordenada em C. Ele define uma estrutura de nó para a lista e inclui funções para criar uma lista vazia, incluir elementos na lista de forma ordenada, mostrar os elementos da lista e contar os elementos da lista.
 
 ### Estrutura da Lista e Declaração de Tipo
 - É definida uma estrutura `struct reg` para representar um nó da lista. Cada nó contém um valor inteiro `info` e um ponteiro para o próximo nó, chamado `prox`.
