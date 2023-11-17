@@ -1,6 +1,6 @@
 # Ordenação Dinâmica de Lista Simplesmente Encadeada em C
 
-Bem-vindo ao repositório que explora a Ordenação Dinâmica de Lista Simplesmente Encadeada em C! Este projeto apresenta um programa simples chamado [`Lista Simplesmente Encadeada.c`]() e temos também um código base que realiza operações em uma lista linear.
+Bem-vindo ao repositório que explora a Ordenação Dinâmica de Lista Simplesmente Encadeada em C! Este projeto apresenta um programa simples chamado [`Lista Simplesmente Encadeada.c`](https://github.com/Cristisiuuu/Algoritmo-II/blob/main/LISTAS%20LINEARES/Lista%20Simplesmente%20Encadeada.c) e temos também um código base que realiza operações em uma lista linear.
 
 ## Como Funciona
 
