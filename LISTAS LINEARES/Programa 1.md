@@ -1,20 +1,20 @@
-# Manipulando Lista Linear Dinamicamente em C
+# Manipulação Dinâmica de Listas Lineares em C
 
-Este repositório contém um programa simples em C chamado "Manipulando Lista Linear Dinamicamente.c" que demonstra a criação dinâmica de um vetor. O código permite ao usuário especificar o tamanho do vetor, preenchê-lo com valores e, em seguida, imprime os elementos do vetor.
+Bem-vindo ao repositório que explora a manipulação dinâmica de listas lineares em C! Este projeto apresenta um programa simples chamado **Manipulando Lista Linear Dinamicamente.c**. O código permite que você crie dinamicamente um vetor, especificando seu tamanho, preenchendo-o com valores e, em seguida, visualizando os elementos.
 
 ## Como Funciona
 
 1. **Inicialização:**
-   - O programa solicita ao usuário a quantidade de valores que deseja armazenar na lista linear.
+   - Você decide quantos valores deseja armazenar na lista linear.
 
 2. **Alocação Dinâmica:**
-   - Um vetor de inteiros é alocado dinamicamente com o tamanho fornecido pelo usuário.
+   - Um vetor de inteiros é alocado dinamicamente com o tamanho escolhido.
 
 3. **Entrada de Dados:**
-   - O usuário insere os valores desejados para preencher a lista linear.
+   - Insira os valores desejados para preencher a lista linear.
 
 4. **Impressão da Lista Linear:**
-   - O programa imprime os valores armazenados na lista linear.
+   - Visualize os valores armazenados na lista linear.
 
 5. **Liberação de Memória:**
    - Antes de encerrar, a memória alocada dinamicamente é liberada.
