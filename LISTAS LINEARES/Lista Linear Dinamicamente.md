@@ -1,6 +1,6 @@
 # Manipulação Dinâmica de Listas Lineares em C
 
-Bem-vindo ao repositório que explora a manipulação dinâmica de listas lineares em C! Este projeto apresenta um programa simples chamado [`Lista Linear Dinamicamente.c`](https://github.com/Cristisiuuu/Algoritmo-II/edit/main/LISTAS%20LINEARES/Manipulando%20Lista%20Linear%20Dinamicamente.c). O código permite que você crie dinamicamente um vetor, especificando seu tamanho, preenchendo-o com valores e, em seguida, visualizando os elementos.
+Bem-vindo ao repositório que explora a manipulação dinâmica de listas lineares em C! Este projeto apresenta um programa simples chamado [`Lista Linear Dinamicamente.c`](https://github.com/Cristisiuuu/Algoritmo-II/blob/main/LISTAS%20LINEARES/Lista%20Linear%20Dinamicamente.c). O código permite que você crie dinamicamente um vetor, especificando seu tamanho, preenchendo-o com valores e, em seguida, visualizando os elementos.
 
 ## Como Funciona
 
